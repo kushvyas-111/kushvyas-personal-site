@@ -9,14 +9,39 @@
 
 html,
 body {
-  background: #ffffff;
-  color: #111111;
+  color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* White + blue themed background with a subtle Boston skyline */
+body {
+  background-color: #ffffff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(180deg, #eaf2ff 0%, #f6f9ff 38%, #ffffff 70%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 240px;
+  z-index: -1;
+  background: url("/skyline.svg") bottom center / cover no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 ::selection {
-  background: #111111;
+  background: #2563eb;
   color: #ffffff;
 }
 
