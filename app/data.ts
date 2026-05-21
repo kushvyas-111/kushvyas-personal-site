@@ -13,8 +13,8 @@ export const PROFILE = {
   email: "kushvyas@bu.edu",
   github: "https://github.com/kushvyas-111",
   linkedin: "https://www.linkedin.com/in/kush-vyas-090396279",
-  // Place your photo at: public/profile.jpg  (or change the path below)
-  photo: "/profile.jpg",
+  // Place your photo at: public/profile.png  (or change the path below)
+  photo: "/profile.png",
 };
 
 export const SKILLS = [
