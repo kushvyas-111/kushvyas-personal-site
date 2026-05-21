@@ -24,23 +24,32 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: linear-gradient(180deg, #eaf2ff 0%, #f6f9ff 38%, #ffffff 70%);
+  background: linear-gradient(180deg, #f4f8ff 0%, #fbfcff 45%, #ffffff 75%);
 }
 
 body::after {
   content: "";
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 46vh;
-  max-height: 460px;
+  inset: 0;
   z-index: -1;
-  background: url("/scene.svg") bottom center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(to top, #000 60%, transparent 100%);
-  mask-image: linear-gradient(to top, #000 60%, transparent 100%);
-  opacity: 0.45;
   pointer-events: none;
+  opacity: 0.34;
+  background-image:
+    url("/graphs.svg"),
+    url("/stars.svg"),
+    url("/city-left.svg"),
+    url("/city-right.svg");
+  background-position:
+    bottom center,
+    top center,
+    bottom left,
+    bottom right;
+  background-size:
+    100% auto,
+    100% auto,
+    auto 52vh,
+    auto 52vh;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 ::selection {
