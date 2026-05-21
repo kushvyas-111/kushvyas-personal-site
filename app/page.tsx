@@ -5,11 +5,11 @@ export default function AboutPage() {
   return (
     <Section label="About">
       <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
-        {/* Photo — place your image at public/profile.jpg */}
+        {/* Photo — place your image at public/profile.png */}
         <img
           src={PROFILE.photo}
           alt={PROFILE.name}
-          className="h-40 w-40 shrink-0 rounded-2xl border border-blue-100 object-cover object-top shadow-sm ring-4 ring-blue-50"
+          className="w-full max-w-[260px] shrink-0 self-center rounded-2xl border border-blue-100 object-contain shadow-sm ring-4 ring-blue-50 sm:w-60 sm:self-start"
         />
         <div>
           <p className="text-base font-medium text-blue-700">{PROFILE.subhead}</p>

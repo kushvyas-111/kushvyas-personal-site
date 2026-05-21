@@ -117,19 +117,32 @@ export const PROJECTS: {
   },
 ];
 
-export const PUBLICATIONS: { title: string; venue?: string; year?: string }[] = [
+export const PUBLICATIONS: {
+  title: string;
+  venue?: string;
+  year?: string;
+  href?: string;
+}[] = [
+  {
+    title:
+      "Profit Powerhouse: Driving ROI Through Cutting-Edge Business Analytics",
+    venue: "International Journal of Scientific Research in Multidisciplinary Studies",
+    year: "2025",
+    href: "https://www.researchgate.net/publication/393228768_Profit_Powerhouse_Driving_ROI_through_Cutting-Edge_Business_Analytics",
+  },
   {
     title:
       "The Age of Screens: Smartphone Usage, Social Media Influence, and Consumer Spending Patterns",
+    venue: "International Journal of Scientific Research in Multidisciplinary Studies",
+    year: "2024",
+    href: "https://www.researchgate.net/publication/381062144_The_Age_of_Screens_Smartphone_Usage_Social_Media_Influence_and_Consumer_Spending_Patterns",
   },
   {
     title:
       "Revolutionizing Data Warehousing: How AI and Robotics Are Transforming the Future of Data Management?",
-  },
-  {
-    title: "Profit Powerhouse: Driving ROI Through Cutting-Edge Business Analytics",
-    venue: "International Journal of Scientific Research in Multidisciplinary Studies",
+    venue: "International Journal of Humanities Engineering Science and Management",
     year: "2023",
+    href: "https://www.researchgate.net/publication/374615685_Revolutionizing_Data_Warehousing_How_AI_and_Robotics_Are_Transforming_the_Future_of_Data_Management",
   },
 ];
 
