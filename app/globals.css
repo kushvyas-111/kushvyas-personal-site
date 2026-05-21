@@ -33,10 +33,13 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 240px;
+  height: 46vh;
+  max-height: 460px;
   z-index: -1;
-  background: url("/skyline.svg") bottom center / cover no-repeat;
-  opacity: 0.5;
+  background: url("/scene.svg") bottom center / cover no-repeat;
+  -webkit-mask-image: linear-gradient(to top, #000 60%, transparent 100%);
+  mask-image: linear-gradient(to top, #000 60%, transparent 100%);
+  opacity: 0.45;
   pointer-events: none;
 }
 
